@@ -14,7 +14,7 @@ public class Task2 {
 
     }
     public static float minFromThree(float n1, float n2, float n3){
-     float min;
+        float min;
         if (n1 < n2 && n1 < n3){
           min=n1;
         } else {
