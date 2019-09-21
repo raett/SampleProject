@@ -13,7 +13,9 @@ public class Main {
         char charSymbol = 'X';
         short shortNumber = 436;//2b
         System.out.println("Alloha from Danila");
-
-
+        System.out.println("Alloha from Danila");
+        System.out.println("Alloha from Danila");
+        System.out.println("Alloha from Danila");
+        System.out.println("Alloha from Danila");
     }
 }
