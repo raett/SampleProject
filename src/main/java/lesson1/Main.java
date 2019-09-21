@@ -12,7 +12,7 @@ public class Main {
         double doubleNumber = 5.1234567891234567;
         char charSymbol = 'X';
         short shortNumber = 436;//2b
-
+        System.out.println("Alloha from Danila");
 
 
     }
