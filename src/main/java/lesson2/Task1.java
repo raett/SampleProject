@@ -7,11 +7,13 @@ public class Task1 {
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
         String chars = in.nextLine();
-        if(str.contains(chars)) {
-            System.out.println("содержит");
-        } else {
-            System.out.println("не содержит");
+        while (str.contains(chars)) {
+            int index = str.indexOf(chars);
+            str = str.substring(0, index) + "***" + str.substring(index + chars.length());
+
         }
+
+        System.out.println(str);
     }
 
 }
