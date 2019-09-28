@@ -9,17 +9,36 @@ public class Task2 {
         int a = in.nextInt();
         int b = in.nextInt();
         int c = in.nextInt();
-        if(c < 0) return;
-        while (c % a == 0 ){
-            c /=a ;
-        }
-        while (c % b == 0 ){
-            c /= b;
-        }
-        if (c == 1){
-            System.out.println("можно");
+        pr(a,b,c);
+    }
+    public static boolean pr(int a, int b, int c){
+
+
+        if (c == 0){
+            if (a == 0 || b == 0){
+                return true;
+            }else {
+                return false;
+            }
         } else {
-            System.out.println("не");
+            if (a != 0) {
+                while (c % a == 0) {
+
+                    c /= a;
+                }
+            }
+            if(b != 0) {
+                while (c % b == 0) {
+                    c /= b;
+                }
+            }
+            if (c == 1){
+                return true;
+            } else {
+                return false;
+            }
+
         }
+
     }
 }
